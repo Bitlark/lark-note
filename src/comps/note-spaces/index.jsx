@@ -1,5 +1,17 @@
+import Searcher from "../searcher"
+
+
 export default function NoteSpaces() {
   return  (
-    <div>NoteSpaces</div>
+    <div className='note-spaces'>
+      <Searcher />
+      <div className='note-spaces-list'>
+        <ul>
+          <li>A book</li>
+          <li>B book</li>
+          <li>C book</li>
+        </ul>
+      </div>
+    </div>
   )
 }
