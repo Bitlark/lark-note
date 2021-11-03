@@ -1,0 +1,17 @@
+.loading-page {
+  background-color: rgb(35,37,46);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .circle {
+    width: 40PX;
+    padding-bottom: 150px;
+  }
+}

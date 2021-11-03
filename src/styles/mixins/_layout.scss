@@ -1,0 +1,63 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-space-around {
+  @extend flex;
+  justify-content: space-around;
+}
+
+@mixin flex-space-between {
+  @extend flex;
+  justify-content: space-between;
+}
+
+@mixin flex-x {
+  @extend flex;
+}
+
+@mixin flex-x-space-around {
+  @extend flex-space-around;
+}
+
+@mixin flex-x-space-between {
+  @extend flex-space-between;
+}
+
+@mixin flex-y {
+  @extend flex;
+  flex-direction: column;
+}
+
+@mixin flex-y-space-around {
+  @extend flex-y;
+  justify-content: space-around;
+}
+
+@mixin flex-y-space-between {
+  @extend flex-y;
+  justify-content: space-between;
+}
+
+@mixin use-std-width {
+  width: 100%;
+  min-width: 1440px;
+}
+
+//文字溢出显示省略号
+@mixin ellipsis($rowCount: 1) {
+  @if $rowCount <=1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $rowCount;
+    -webkit-box-orient: vertical;
+  }
+}
