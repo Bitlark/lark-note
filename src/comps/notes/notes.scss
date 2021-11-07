@@ -65,3 +65,21 @@
     }
   }
 }
+
+.editor-container {
+  padding: 20px;
+  height: 100vh;
+  box-sizing: border-box;
+
+  .title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    // width: 80%;
+    // margin: 20px;
+  }
+
+  .editor-pane {
+    // margin: 20px;
+  }
+}

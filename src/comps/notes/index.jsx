@@ -44,9 +44,12 @@ export default function Notes() {
       <div className='editor-pane col-8'>
         <Switch>
           <Route exact path="/notes/create">
-            <div className='editor-container'>
-            new
-            <Editor />
+            <div className='editor-container boder-box'>
+              <input placeholder='请输入标题...' className='lark-input title' />
+              <div className='editor-pane'>
+                <Editor />
+              </div>
+              
             </div>
           </Route>
           <Route exact path="/notes/edit/:noteId">

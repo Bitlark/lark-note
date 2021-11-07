@@ -1,10 +1,8 @@
-import React from 'react'
-// 引入编辑器组件
-import BraftEditor from 'braft-editor'
-// 引入编辑器样式
-import 'braft-editor/dist/index.css'
+import React from 'react';
+import BraftEditor from 'braft-editor';
+import 'braft-editor/dist/index.css';
 
-export default class EditorDemo extends React.Component {
+export default class CoreEditor extends React.Component {
 
     state = {
         // 创建一个空的editorState作为初始值
@@ -32,11 +30,18 @@ export default class EditorDemo extends React.Component {
     }
 
     render () {
-
+        const controls = [
+            {
+              key: 'bold',
+              text: <b>加粗</b>
+            },
+            'italic', 'underline', 'separator', 'link', 'separator', 'media'
+          ]
         const { editorState } = this.state
         return (
-            <div className="my-component">
+            <div className="braft-editor-component">
                 <BraftEditor
+                    controls={controls}
                     value={editorState}
                     onChange={this.handleEditorChange}
                     onSave={this.submitContent}
