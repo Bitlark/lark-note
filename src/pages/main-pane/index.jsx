@@ -13,9 +13,9 @@ import './layout.scss'
 export default function MainPane() {
   return (
     <Router>
-      <div className='main-pane grid grid-col-24'>
+      <div className='main-pane border-box grid grid-col-24'>
         <Sider />
-        <div className='col-22 content-area'>
+        <div className='content-area col-22'>
           <Switch>
             <Route path="/notes">
               <Notes />

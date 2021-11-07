@@ -1,5 +1,13 @@
 @import './vars';
 
+// tools styles
+
+.border-box {
+  box-sizing: border-box;
+}
+
+
+// component styles
 button {
   padding: 5px 10px;
   margin: 5px 5px 5px 0;
@@ -10,3 +18,42 @@ button {
   border-radius: 5px;
 }
 
+input[type=text], input[type=password], input[type=number], textarea {
+  -webkit-appearance: none;
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+
+
+.lark-input {
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    min-width: 0;
+    padding: 4px 11px;
+    color: $input-inner-color;
+    font-size: 16px;
+    line-height: 1.5715;
+    background-color: $button-background;
+    background-image: none;
+    border: none;
+    border-bottom: 1px solid $border-color;
+    transition: all .3s;
+
+    &:focus-visible {
+      outline: none;
+      border-bottom: 1px solid $theme-color;
+
+      font-size: 16px;
+      font-weight: bold;
+    }
+}

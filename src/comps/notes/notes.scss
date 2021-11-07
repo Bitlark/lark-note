@@ -3,28 +3,65 @@
 
 
 .notes{
-  .notes-list-area  {
+  box-sizing: border-box;
+  .notes-column  {
     display: flex;
     flex-direction: column;
     border-right: 1px solid $border-color;
-    padding: 20px;
     height: 100vh;
     @include make-y-scroller;
   }
-  .func-buttons {
+
+  .functions-pane {
     display: flex;
+    padding: 10px;
   }
 
+  .query-pane {
+    padding: 10px;
+  }
 
-  .notes-list {
+  .notes-pane {
+    padding: 10px;
     ul {
       margin: 10px 0;
     }
 
-    li {
-      padding: 10px;
+    .note-item {
+      padding: 20px;
       margin-bottom: 10px;
       @include card-shadow;
+      overflow: hidden;
+
+      .title {
+        font-weight: bold;
+        color: $title-font-color;
+        margin-bottom: 10px;
+      }
+
+      .subtitle {
+        color: $subtitle-font-color;
+        font-size: 12px;
+        margin: 10px 0;
+      }
+
+      .cover {
+        width: 100px;
+        height: 100px;
+        border: 1px solid $border-color;
+        padding: 5px;
+        margin: 10px 0;
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      .datetime {
+        color: $subtitle-font-color;
+        font-size: 12px;
+        text-align: right;
+      }
     }
   }
 }

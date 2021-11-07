@@ -1,3 +1,17 @@
+@import '~/styles/mixins/_common';
+@import '~/styles/_vars';
+
 .searcher {
-  
+  .filter-pane {
+    font-size: 12px;
+  }
+
+  .order-query {
+    display: flex;
+    color: $tools-font-color;
+
+    .order-item {
+      margin: 10px 10px 10px 0;
+    }
+  }
 }

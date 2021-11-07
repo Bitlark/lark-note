@@ -4,7 +4,7 @@ import Brand from '~/logo.svg?component'
 
 export default function Sider() {
   return  (
-    <div className='col-2 sider'>
+    <div className='sider border-box col-2 '>
       <div className='logo'>
         <Brand />
       </div>
