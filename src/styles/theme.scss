@@ -1,0 +1,12 @@
+@import './vars';
+
+button {
+  padding: 5px 10px;
+  margin: 5px 5px 5px 0;
+  background-color: $button-background;
+  color: $theme-color;
+  font-weight: bold;
+  border: 1px solid $theme-color;
+  border-radius: 5px;
+}
+

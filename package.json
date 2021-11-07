@@ -11,6 +11,7 @@
     "release:patch": "standard-version -- --release-as patch"
   },
   "dependencies": {
+    "@honkhonk/vite-plugin-svgr": "^1.1.0",
     "braft-editor": "^2.3.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -21,7 +22,6 @@
     "@vitejs/plugin-react": "^1.0.7",
     "sass": "^1.43.4",
     "standard-version": "^9.3.2",
-    "vite": "^2.6.13",
-    "vite-babel-plugin": "^0.0.2"
+    "vite": "^2.6.13"
   }
 }

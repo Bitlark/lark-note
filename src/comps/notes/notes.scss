@@ -1,0 +1,30 @@
+@import '~/styles/mixins/_common';
+@import '~/styles/_vars';
+
+
+.notes{
+  .notes-list-area  {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid $border-color;
+    padding: 20px;
+    height: 100vh;
+    @include make-y-scroller;
+  }
+  .func-buttons {
+    display: flex;
+  }
+
+
+  .notes-list {
+    ul {
+      margin: 10px 0;
+    }
+
+    li {
+      padding: 10px;
+      margin-bottom: 10px;
+      @include card-shadow;
+    }
+  }
+}

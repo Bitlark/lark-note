@@ -1,4 +1,5 @@
 @import './reset';
+@import './vars';
 
 body,
 #root {
@@ -9,50 +10,14 @@ body,
 
 // theme ===================
 a {
-  // color: rgba($color: #fff, $alpha: 0.85);
+  color: rgba($color: $link-color, $alpha: 0.85);
   text-decoration: none;
 }
 a:hover {
   text-decoration: none;
-  // color: #fff;
+  color: $link-hover-color;
   font-weight: bold;
 }
-
-// grid layout constants =============
-
-// grid-breakpoints
-$grid-breakpoints: (
-  xs: 0,
-  sm: 1204px,
-  md: 1206px,
-  lg: 1208px,
-  xl: 1210px,
-  2xl: 1600px,
-) !default;
-
-// $spacer: 1rem !default;
-// $spacers: (
-//   0: 0,
-//   1: $spacer * .25,
-//   2: $spacer * .5,
-//   3: $spacer,
-//   4: $spacer * 1.5,
-//   5: $spacer * 3,
-// ) !default;
-
-// $gaps: $spacers !default;
-
-// container-max-widths
-$container-max-widths: (
-  sm: 1064px,
-  md: 1066px,
-  lg: 1068px,
-  xl: 1070px,
-  xxl: 1110px,
-) !default;
-
-// Container padding
-// $container-padding-x: 0.75rem !default;
 
 @import 'waffle-grid-layout';
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import './loading.scss';
+import CircleSvg from './circle.svg?component'
 
 export default function Loading() {
-  return <img className='circle' src={import('./circle.svg')} alt='loading' />
+  return <CircleSvg className='circle' />
 }
